@@ -1,0 +1,8 @@
+title task 0.6 diagram
+
+note left of Browser: user Clik save button
+Browser->Server:POST request https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Server-->Browser: Response status  201 with , response : {"message":"note created"}
+note left of Browser: DOM updated
+
+

@@ -1,0 +1,32 @@
+title task 0.4 diagram
+
+note left of Browser: user click on submit button
+Browser->Server:POST request
+
+Server-->Browser: Response status  302
+
+
+
+Browser->Server:GET request to https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->Browser: Response status  304 
+note left of Browser:notes.html received
+
+Browser->Server:GET request to https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: Response status  304 
+note left of Browser:main.css received
+
+
+Browser->Server:GET request to https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Browser: Response status  304 
+
+
+
+Browser->Server:GET request to https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: Response status  200  
+note left of Browser:Data.json  fetched and rendered to DOM using Javascript
+
+Browser->Server:GET request to https://studies.cs.helsinki.fi/favicon.ico
+Server-->Browser: Response status  200 , 
+note left of Browser:html code received  for favicon contaning an anchor tag
+
+
